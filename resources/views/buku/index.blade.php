@@ -8,6 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
+<x-app-layout>
+
+    
+
     <div class="container mx-auto mt-10 p-4">
         <h1 class="text-3xl font-semibold text-center mb-6 bg-gray-200 py-2">Daftar Buku</h1>
         <a href="{{ route('buku.create') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4 inline-block">Tambah Buku</a>
@@ -63,5 +67,6 @@
             <p class="text-lg">Total harga dari seluruh buku: Rp {{ number_format($total_harga, 2) }}</p>
         </div>
     </div>
+    </x-app-layout>
 </body>
 </html>
